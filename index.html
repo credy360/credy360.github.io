@@ -6,12 +6,12 @@
   <title>Credy360 | Fast. Flexible. Reliable.</title>
   <meta
     name="description"
-    content="Credy360 provides simple and transparent loan application support for individuals and businesses."
+    content="Fast loans for individuals and businesses. Up to ₦2M in under 24 hours."
   />
   <style>
     :root {
       --blue: #0d4ea6;
-      --blue-dark: #083b7a;
+      --blue-dark: #062b5b;
       --blue-soft: #eef5ff;
       --orange: #f28c18;
       --orange-dark: #d97706;
@@ -38,9 +38,9 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(13, 78, 166, 0.08), transparent 28%),
-        radial-gradient(circle at bottom right, rgba(242, 140, 24, 0.1), transparent 24%),
-        linear-gradient(180deg, #f3f7fd 0%, #ffffff 45%, #f5f8fc 100%);
+        radial-gradient(circle at top left, rgba(13, 78, 166, 0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(242, 140, 24, 0.08), transparent 24%),
+        linear-gradient(180deg, #062b5b 0%, #0d4ea6 45%, #083b7a 100%);
       overflow-x: hidden;
     }
 
@@ -311,29 +311,21 @@
 
     .section-heading h3 {
       margin: 0 0 10px;
-      color: var(--blue-dark);
+      color: #ffffff;
       font-size: 2rem;
     }
 
     .section-heading p {
       margin: 0 auto;
       max-width: 760px;
-      color: var(--muted);
+      color: rgba(255,255,255,0.88);
       line-height: 1.75;
       font-size: 1rem;
     }
 
-    .grid-3,
     .grid-2 {
       display: grid;
       gap: 22px;
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid-2 {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -357,8 +349,7 @@
       line-height: 1.75;
     }
 
-    .requirements-list,
-    .faq-list {
+    .requirements-list {
       list-style: none;
       padding: 0;
       margin: 0;
@@ -394,7 +385,6 @@
     }
 
     .steps {
-      counter-reset: step;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
@@ -424,15 +414,8 @@
     }
 
     .step h4 {
-      margin: 0 0 10px;
-      color: var(--blue-dark);
-    }
-
-    .step p {
       margin: 0;
-      color: var(--muted);
-      line-height: 1.65;
-      font-size: 0.95rem;
+      color: var(--blue-dark);
     }
 
     .highlight-banner {
@@ -458,27 +441,6 @@
       color: #4b5563;
     }
 
-    .faq-item {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px 20px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
-    }
-
-    .faq-item h4 {
-      margin: 0 0 10px;
-      color: var(--blue-dark);
-      font-size: 1.03rem;
-    }
-
-    .faq-item p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.7;
-      font-size: 0.96rem;
-    }
-
     .cta {
       background: linear-gradient(135deg, var(--blue-dark), var(--blue));
       border-radius: 28px;
@@ -491,13 +453,6 @@
     .cta h3 {
       margin: 0 0 12px;
       font-size: 2rem;
-    }
-
-    .cta p {
-      margin: 0 auto 24px;
-      max-width: 740px;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.94);
     }
 
     .contact-grid {
@@ -530,7 +485,7 @@
     .footer {
       margin-top: 34px;
       text-align: center;
-      color: #6b7280;
+      color: rgba(255,255,255,0.9);
       font-size: 0.92rem;
       line-height: 1.7;
     }
@@ -556,7 +511,6 @@
 
     @media (max-width: 980px) {
       .hero-grid,
-      .grid-3,
       .grid-2,
       .steps,
       .contact-grid {
@@ -581,14 +535,7 @@
       }
 
       .hero {
-        padding: 0;
-      }
-
-      .hero-header,
-      .hero-body,
-      .cta {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 32px 20px;
       }
 
       .hero-copy h2,
@@ -636,7 +583,6 @@
         <a class="link" href="#about">About</a>
         <a class="link" href="#requirements">Requirements</a>
         <a class="link" href="#how-it-works">How It Works</a>
-        <a class="link" href="#faq">FAQs</a>
         <a class="link" href="#contact">Contact</a>
         <a class="btn" href="https://forms.zohopublic.com/oyewaleoyerindecred1/form/Credy360LoanOnboardingForm/formperma/a9K_RQ7XAsr8Mg9sNAy5bE5-fhhzFNuPr30l8Zp5f-M" target="_blank" rel="noopener noreferrer">Apply for Loan</a>
       </div>
@@ -647,12 +593,10 @@
     <section class="hero" id="about">
       <div class="hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Loan application support for individuals and businesses</span>
+          <span class="eyebrow">Fast loans for individuals and businesses. Up to ₦2M in under 24 hours.</span>
           <h2>Get the funding support you need with speed and clarity.</h2>
           <p>
-            Credy360 helps individuals and businesses take the next step with a simple,
-            transparent loan application process. Our goal is to make access to funding
-            more structured, more understandable, and easier to start.
+            Simple loans for individuals and businesses. Fast approval, clear terms.
           </p>
 
           <div class="hero-actions">
@@ -670,38 +614,13 @@
         <aside class="hero-panel">
           <h3>Quick Overview</h3>
           <p class="amount">Up to 2M</p>
-          <p class="sub">Get access to loan support with a process designed to move quickly once documentation is complete.</p>
+          <p class="sub">Fast loans for individuals and businesses.</p>
           <ul class="mini-list">
-            <li><strong>Interest:</strong> From 5%*</li>
+            <li><strong>Interest:</strong> From 5%</li>
             <li><strong>Speed:</strong> Less than 24 hours upon complete documentation</li>
-            <li><strong>Focus:</strong> Personal and business loan support</li>
+            <li><strong>Focus:</strong> Personal and business loans</li>
           </ul>
         </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <h3>Why choose Credy360?</h3>
-        <p>
-          We focus on clarity, responsiveness, and a straightforward application experience.
-          The goal is to help you understand what is needed and move your request forward without unnecessary confusion.
-        </p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h4>Simple process</h4>
-          <p>Start your application online, provide the required information, and follow a structured review flow.</p>
-        </div>
-        <div class="card">
-          <h4>Clear requirements</h4>
-          <p>We show you what documents are needed up front so you can prepare before submitting your request.</p>
-        </div>
-        <div class="card">
-          <h4>Responsive support</h4>
-          <p>Our team aims to provide timely guidance so applicants know the next step in the process.</p>
-        </div>
       </div>
     </section>
 
@@ -719,7 +638,7 @@
 
         <div class="card">
           <h4>Interest and timeline</h4>
-          <p style="margin-bottom: 12px;"><strong style="font-size: 2rem; color: #d97706;">From 5%*</strong></p>
+          <p style="margin-bottom: 12px;"><strong style="font-size: 2rem; color: #d97706;">From 5%</strong></p>
           <p style="margin-bottom: 12px;">Interest depends on the loan amount and repayment tenor.</p>
           <p style="margin: 0;"><strong>Target speed:</strong> up to 2M in less than 24 hours upon complete documentation.</p>
         </div>
@@ -734,67 +653,30 @@
     <section class="section" id="how-it-works">
       <div class="section-heading">
         <h3>How it works</h3>
-        <p>
-          A clear four-step process designed to help applicants move from interest to submission with confidence.
-        </p>
       </div>
 
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
           <h4>Start Application</h4>
-          <p>Click the Apply for Loan button and open the online form.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
           <h4>Provide Details</h4>
-          <p>Enter your personal or business information and complete all required sections.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
           <h4>Upload Documents</h4>
-          <p>Submit the supporting documents needed for review and validation.</p>
         </div>
         <div class="step">
           <div class="step-number">4</div>
           <h4>Await Review</h4>
-          <p>Your request is reviewed and you receive guidance on the next steps.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="section-heading">
-        <h3>Frequently asked questions</h3>
-        <p>Answers to some of the common questions applicants may have before starting.</p>
-      </div>
-
-      <div class="grid-2 faq-list">
-        <div class="faq-item">
-          <h4>Who can apply?</h4>
-          <p>Individuals and businesses who can provide the required details and supporting documentation.</p>
-        </div>
-        <div class="faq-item">
-          <h4>What documents are required?</h4>
-          <p>Requirements include valid ID, BVN, guarantor details, and a completed request form.</p>
-        </div>
-        <div class="faq-item">
-          <h4>How is interest determined?</h4>
-          <p>Interest depends on the loan amount requested and the selected repayment tenor.</p>
-        </div>
-        <div class="faq-item">
-          <h4>How long does review take?</h4>
-          <p>Applications may move quickly when all required documentation is complete and accurate.</p>
         </div>
       </div>
     </section>
 
     <section class="section cta" id="contact">
       <h3>Ready to begin?</h3>
-      <p>
-        Complete the online application to get started. If you need help before submitting,
-        reach out and our team will guide you through the process.
-      </p>
       <a class="btn" href="https://forms.zohopublic.com/oyewaleoyerindecred1/form/Credy360LoanOnboardingForm/formperma/a9K_RQ7XAsr8Mg9sNAy5bE5-fhhzFNuPr30l8Zp5f-M" target="_blank" rel="noopener noreferrer">Apply for Loan</a>
 
       <div class="contact-grid">
@@ -811,7 +693,7 @@
     </section>
 
     <footer class="footer">
-      <p><strong>Credy360</strong> — Loan application support for individuals and businesses.</p>
+      <p><strong>Credy360</strong> — Fast loans for individuals and businesses.</p>
       <p>
         Terms and conditions apply. Submitted information is subject to review and verification.
       </p>
