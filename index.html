@@ -445,33 +445,6 @@
       margin-top: 34px;
     }
 
-    .loan-choice-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin: 0 0 24px;
-    }
-
-    .loan-choice-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 24px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-      text-align: center;
-    }
-
-    .loan-choice-card h4 {
-      margin: 0 0 10px;
-      color: var(--blue-dark);
-      font-size: 1.2rem;
-    }
-
-    .loan-choice-card p {
-      margin: 0 0 18px;
-      color: var(--muted);
-      line-height: 1.7;
-    }
 
     .form-wrapper {
       background: var(--white);
@@ -599,10 +572,6 @@
         width: 100%;
       }
 
-      .loan-choice-grid {
-        grid-template-columns: 1fr;
-      }
-
       .form-wrapper {
         padding: 14px;
       }
@@ -724,49 +693,23 @@
 
     <section class="section form-section" id="apply">
       <div class="section-heading">
-        <h3>Choose Your Loan Application</h3>
+        <h3>Loan Pre-Qualification</h3>
         <p>
-          Select the loan type that applies to you. Complete the form carefully and our team will review your application.
+          Complete one simple pre-qualification form and our team will review your details to determine the most suitable loan option.
         </p>
-      </div>
-
-      <div class="loan-choice-grid">
-        <div class="loan-choice-card">
-          <h4>SME Business Loan</h4>
-          <p>For business owners and SMEs seeking working capital or business support.</p>
-          <a
-            class="btn"
-            href="#loan-form"
-            onclick="switchLoanForm('sme'); return true;"
-          >
-            Apply for SME Loan
-          </a>
-        </div>
-
-        <div class="loan-choice-card">
-          <h4>Personal Loan</h4>
-          <p>For individuals applying for personal financial support with clear repayment terms.</p>
-          <a
-            class="btn"
-            href="#loan-form"
-            onclick="switchLoanForm('personal'); return true;"
-          >
-            Apply for Personal Loan
-          </a>
-        </div>
       </div>
 
       <div class="form-wrapper" id="loan-form">
         <p class="form-note">
-          <strong id="selectedFormTitle">SME Business Loan Application</strong><br />
+          <strong>Credy360 Loan Pre-Qualification Form</strong><br />
           Please ensure your details, valid ID, BVN, guarantor information, and supporting documents are ready before submitting.
         </p>
 
         <iframe
           id="loanFormFrame"
-          src="https://apply.credy360.com/oyewaleoyerindecred1/form/SMEBusinessLoanApplication/formperma/PIlc9LST_ZHwYPCX5eI_bYZvkapngXoKCMrTRoLvuwI"
+          src="https://apply.credy360.com/credy360/form/LoanPreQualification/formperma/EIZc1oCZCQySPSScTckg8YRr34uDe2psTeZ3E2SDc-0"
           loading="lazy"
-          title="Credy360 Loan Application Form">
+          title="Credy360 Loan Pre-Qualification Form">
         </iframe>
       </div>
     </section>
@@ -797,26 +740,5 @@
       </p>
     </footer>
   </main>
-
-  <script>
-    const loanForms = {
-      sme: {
-        title: "SME Business Loan Application",
-        url: "https://apply.credy360.com/oyewaleoyerindecred1/form/SMEBusinessLoanApplication/formperma/PIlc9LST_ZHwYPCX5eI_bYZvkapngXoKCMrTRoLvuwI"
-      },
-      personal: {
-        title: "Personal Loan Application",
-        url: "https://apply.credy360.com/oyewaleoyerindecred1/form/PersonalLoanApplication/formperma/Yb9fmymIG34TqidwEYMhp2sbp8riZONnWg9Xsx70n1A"
-      }
-    };
-
-    function switchLoanForm(type) {
-      const selected = loanForms[type];
-      if (!selected) return;
-
-      document.getElementById("selectedFormTitle").innerText = selected.title;
-      document.getElementById("loanFormFrame").src = selected.url;
-    }
-  </script>
 </body>
 </html>
