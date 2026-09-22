@@ -62,8 +62,9 @@
       border-radius: 12px; padding: 14px 24px; font-weight: 800;
       transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; cursor: pointer;
     }
-    .btn { background: linear-gradient(90deg, var(--orange), #f59e0b); color: var(--white); box-shadow: 0 12px 24px rgba(242, 140, 24, 0.28); }
+    .btn { background: linear-gradient(90deg, var(--orange), #f59e0b); color: var(--blue-dark); box-shadow: 0 12px 24px rgba(242, 140, 24, 0.28); }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 16px 30px rgba(242, 140, 24, 0.34); }
+    a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
     .btn-outline { background: transparent; color: var(--blue-dark); border: 1.5px solid #c7d8f2; }
     .btn-outline:hover { transform: translateY(-2px); border-color: var(--blue); background: #f8fbff; }
     .page { max-width: var(--max-width); margin: 0 auto; padding: 26px 20px 70px; position: relative; }
@@ -109,9 +110,9 @@
     .highlight-banner strong { display: block; font-size: 2rem; color: #183b66; margin-bottom: 8px; }
     .highlight-banner span { font-size: 1.08rem; font-weight: 700; color: #4b5563; }
     .form-section { margin-top: 34px; }
-    .form-wrapper { background: var(--white); border-radius: 28px; padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border); }
-    .form-wrapper iframe { width: 100%; min-height: 1150px; border: 0; border-radius: 18px; display: block; background: var(--white); }
+    .form-wrapper { background: var(--white); border-radius: 28px; padding: 36px 24px; box-shadow: var(--shadow); border: 1px solid var(--border); text-align: center; }
     .form-note { text-align: center; color: var(--muted); line-height: 1.7; margin: 0 auto 20px; max-width: 760px; }
+    .form-helper { color: var(--muted); font-size: 0.9rem; margin: 14px 0 0; }
     .cta { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); border-radius: 28px; color: var(--white); padding: 42px 28px; text-align: center; box-shadow: var(--shadow); }
     .cta h3 { margin: 0 0 12px; font-size: 2rem; }
     .cta p { margin: 0 auto; max-width: 760px; line-height: 1.75; color: rgba(255, 255, 255, 0.92); }
@@ -125,6 +126,7 @@
       .hero-copy h2 { font-size: 2.25rem; }
     }
     @media (max-width: 760px) {
+      .navbar { position: static; }
       .nav-inner { flex-direction: column; align-items: flex-start; }
       .nav-links { width: 100%; justify-content: flex-start; gap: 14px; }
       .hero { padding: 32px 20px; }
@@ -132,7 +134,6 @@
       .hero-actions { flex-direction: column; align-items: stretch; }
       .btn, .btn-outline { width: 100%; }
       .form-wrapper { padding: 14px; }
-      .form-wrapper iframe { min-height: 1250px; }
     }
   </style>
 </head>
@@ -235,12 +236,8 @@
           <strong>Credy360 Loan Pre-Qualification Form</strong><br />
           Please ensure your details, valid ID, BVN, guarantor information, and supporting documents are ready before submitting.
         </p>
-        <iframe
-          id="loanFormFrame"
-          src="https://apply.credy360.com/credy360/form/LoanPreQualification/formperma/EIZc1oCZCQySPSScTckg8YRr34uDe2psTeZ3E2SDc-0"
-          loading="lazy"
-          title="Credy360 Loan Pre-Qualification Form">
-        </iframe>
+        <a class="btn" href="https://script.google.com/macros/s/AKfycby1-W8DQFsA1EQN3Vk9RTf-sk5ZhfVX_qjbJdZkBs6z5pBdHgjjobPdWXW-lpuoxNPYWg/exec?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Start Loan Application</a>
+        <p class="form-helper">The application form opens in a new tab.</p>
       </div>
     </section>
 
